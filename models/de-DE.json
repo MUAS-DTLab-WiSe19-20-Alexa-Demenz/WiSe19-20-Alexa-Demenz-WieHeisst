@@ -1,0 +1,236 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "stamm baum",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "WhoIsIntent",
+                    "slots": [
+                        {
+                            "name": "Member",
+                            "type": "Relation"
+                        }
+                    ],
+                    "samples": [
+                        "Wer ist meine {Member}",
+                        "Wie heißt meine {Member}",
+                        "Wer ist die {Member} meiner {Member}",
+                        "Wer ist der {Member} meiner {Member}",
+                        "Wie heißt mein {Member}",
+                        "Wer ist mein {Member}"
+                    ]
+                },
+                {
+                    "name": "PhoneNumberIntent",
+                    "slots": [
+                        {
+                            "name": "Member",
+                            "type": "Relation"
+                        },
+                        {
+                            "name": "Name",
+                            "type": "AMAZON.DE_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "Wie ist die Telefonnummer von {Name}",
+                        "Wie ist die Telefonnummer meines {Member}",
+                        "Wie ist die Telefonnummer meiner {Member}"
+                    ]
+                },
+                {
+                    "name": "WorkIntent",
+                    "slots": [
+                        {
+                            "name": "Member",
+                            "type": "Relation"
+                        },
+                        {
+                            "name": "Name",
+                            "type": "AMAZON.DE_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "Als was arbeitet {Name}",
+                        "Als was arbeitet meine  {Member}",
+                        "Als was arbeitet mein {Member}"
+                    ]
+                },
+                {
+                    "name": "HobbyIntent",
+                    "slots": [
+                        {
+                            "name": "Member",
+                            "type": "Relation"
+                        },
+                        {
+                            "name": "Name",
+                            "type": "AMAZON.DE_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "Welche Hobbys hat {Name}",
+                        "Welche Hobbys hat meine {Member}",
+                        "Welche Hobbys hat mein {Member}",
+                        "Was für Hobbys hat meine {Member}",
+                        "Was für Hobbys hat {Name}",
+                        "Was für Hobbys hat mein {Member}"
+                    ]
+                },
+                {
+                    "name": "AgeIntent",
+                    "slots": [
+                        {
+                            "name": "Name",
+                            "type": "AMAZON.DE_FIRST_NAME"
+                        },
+                        {
+                            "name": "Member",
+                            "type": "Relation"
+                        }
+                    ],
+                    "samples": [
+                        "Wie alt ist meine {Member}",
+                        "Wie alt ist mein {Member}",
+                        "Wie alt ist {Name}"
+                    ]
+                },
+                {
+                    "name": "BirthdayIntent",
+                    "slots": [
+                        {
+                            "name": "Member",
+                            "type": "Relation"
+                        },
+                        {
+                            "name": "Name",
+                            "type": "AMAZON.DE_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "Wann hat {Name} Geburtstag",
+                        "Wann hat meine {Member} Geburtstag",
+                        "Wann hat mein {Member} Geburtstag"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Relation",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Großvater"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Großmutter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Opa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neffe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nichte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Schwägerin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Schwager"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sohn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tochter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cousine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cousin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Enkelin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Enkel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mutter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vater"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Schwester"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bruder"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
